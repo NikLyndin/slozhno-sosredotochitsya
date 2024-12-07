@@ -1,4 +1,9 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --xl-title-color: #db00ff;
+  --l-title-color: #ff0070;
+  --m-title-color: #000028;
+  --text-color: #f1b2ce;
+  --header-bg-image: url("../images/cover-image-dark.png");
+  --bg-color: #000028;
+  --wrapper-color: #ff0070;
+}
