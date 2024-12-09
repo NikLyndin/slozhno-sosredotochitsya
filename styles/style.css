@@ -1,6 +1,9 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 1.125rem;
   background-color: var(--bg-color);
@@ -8,26 +11,26 @@
 }
 
 .text-wrapper-container {
-  background-color: var(--wrapper-color)
+  background-color: var(--accent-color)
 }
 
 .header {
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: 300px 130px 300px;
   column-gap: 1.25rem;
   background-image: var(--header-bg-image);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   margin-block-end: 3.75rem;
+  min-height: 48rem;
 }
 
 .header__theme-menu {
   grid-row-start: 1;
   grid-column-start: 2;
-  padding-block-end: 273px;
 }
 
 .header__theme-menu-list {
@@ -41,20 +44,20 @@
   grid-row: 2 / 3;
   grid-column: span 3;
   margin-inline-start: -20px;
+  align-self: center;
 }
 
-.big-text-decor {
+.title-decor {
   color: var(--xl-title-color);
-  text-shadow: .25rem .25rem #ff0070;
-  font-size: 9.8125rem;
-  line-height: 129.53px;
+  text-shadow: .25rem .25rem var(--accent-color);
+  font-size: clamp(7.5rem, -0.2214rem + 15.678vw, 9.8125rem);
   font-weight: 700;
 }
 
 .header-subtitle {
   grid-row-start: 3;
   grid-column: 2 / 4;
-  padding-block: 7.125rem;
+  align-self: center;
   padding-inline-start: 25%;
 }
 
@@ -67,7 +70,7 @@
 }
 
 .article-title {
-  color: var(--l-title-color);
+  color: var(--accent-color);
   font-size: inherit;
 }
 
@@ -201,4 +204,46 @@
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 48rem;
 }
+
+.footer-text {
+  align-self: center;
+}
+
+
+@media (max-width: 798px) {
+  .header {
+    grid-template-rows: 443px 99px 443px;
+  }
+
+  .images-container {
+      max-block-size: 48.75rem;
+  }
+
+  .concentration-problems__multitask, .concentration-problems__dopamine {
+    margin-inline-start: .625rem;
+  }
+
+  .concentration-reasons__multitask {
+    grid-row: 2 / 3;
+    grid-column: span 3;
+  }
+  
+  .concentration-reasons__food {
+    grid-row: 3 / 4;
+    grid-column: span 3;
+  }
+  
+  .concentration-reasons__gadgets {
+    grid-row: 4 / 5;
+    grid-column: span 3;
+  }
+
+  .concentration-solutions__about {
+    margin-inline-start: .625rem;
+  }
+} 
