@@ -1,8 +1,13 @@
 :root {
-  --xl-title-color: #db00ff;
+  --bg-color: #000028;
+  --header-bg-image: url("../images/cover-image-dark.png");
   --accent-color: #ff0070;
+  --xl-title-color: #db00ff;
+  --l-title-color: #ff0070;
   --m-title-color: #000028;
   --text-color: #f1b2ce;
-  --header-bg-image: url("../images/cover-image-dark.png");
-  --bg-color: #000028;
+}
+
+.header__theme-menu-item button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4);
 }
