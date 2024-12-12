@@ -6,8 +6,5 @@
   --l-title-color: #353430;
   --m-title-color: #353430;
   --text-color: #353430;
-}
-
-.header__theme-menu-item button:hover {
-  border: 1px solid rgba(50, 49, 45, 0.4);;
+  --hover-button: rgba(50, 49, 45, 0.4);
 }
