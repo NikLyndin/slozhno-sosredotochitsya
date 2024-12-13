@@ -198,7 +198,7 @@
 @media (width >= 780px) {
 
 	.header {
-		min-block-size: 1024px;
+		min-block-size: 64rem;
 		padding: 1.25rem;
 		margin-block-end: 3.75rem;
 	}
@@ -375,6 +375,7 @@
 	.header-subtitle {
 		grid-column: 2 / 4;
 		padding-inline-start: 25%;
+		margin-block-start: 1.25rem;
 	}
 
 	.main {
@@ -395,7 +396,6 @@
 
 	.concentration-problems {
 		grid-template-columns: repeat(3, 1fr);
-
 	}
 
 	.concentration-reasons__multitask {
@@ -431,5 +431,4 @@
 	.footer {
 		min-block-size: 48rem;
 	}
-
 }
