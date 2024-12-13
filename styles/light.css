@@ -1,4 +1,4 @@
-.theme_light {
+:root .theme_light {
   --bg-image: url("../images/cover-image-light.png");
   --accent-color: #ff8dcb;
   --xl-title-color: #ffc2e6;
@@ -9,8 +9,8 @@
   --visible-block: none;
 }
 
-@media (prefers-color-scheme: auto) {
-  .theme_light {
+@media (prefers-color-scheme: light) {
+  :root .theme_light {
     --bg-image: url("../images/cover-image-light.png");
     --accent-color: #ff8dcb;
     --xl-title-color: #ffc2e6;
