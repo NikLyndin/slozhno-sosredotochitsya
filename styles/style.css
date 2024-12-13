@@ -3,10 +3,12 @@
 	flex-direction: column;
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 1.125rem;
-  background-color: var(--bg-color);
   line-height: 1.4625rem;
   color: var(--m-title-color);
+	background-image: var(--bg-image);
+	background-size: cover;
 	background-attachment: fixed;
+	background-position: center;
 }
 
 .text-wrapper-container {
@@ -33,7 +35,7 @@
 .title-decor {
 	color: var(--xl-title-color);
 	text-shadow: .25rem .25rem var(--accent-color);
-	font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+	font-size: clamp(7.25rem, 6.9633rem + 1.2232vw, 7.5rem);
 	font-weight: 700;
 	line-height: 95.7px;
 }
@@ -61,10 +63,6 @@
 }
 
 .header {
-  background-image: var(--header-bg-image);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr min-content 1fr;
@@ -195,10 +193,10 @@
 	block-size: 100%;
 }
 
-@media (width >= 728px) {
+@media (width >= 780px) {
 
 	.header {
-		min-block-size: 64rem;
+		min-block-size: 1024px;
 		padding: 1.25rem;
 		margin-block-end: 3.75rem;
 	}
@@ -375,7 +373,6 @@
 	.header-subtitle {
 		grid-column: 2 / 4;
 		padding-inline-start: 25%;
-		margin-block-start: 1.25rem;
 	}
 
 	.main {
@@ -392,6 +389,11 @@
 
 	.concentration-problems__dopamine {
 		grid-column: 2 / 4;
+	}
+
+	.concentration-problems {
+		grid-template-columns: repeat(3, 1fr);
+
 	}
 
 	.concentration-reasons__multitask {
@@ -427,4 +429,5 @@
 	.footer {
 		min-block-size: 48rem;
 	}
+
 }
