@@ -1,4 +1,6 @@
 .page {
+	display: flex;
+	flex-direction: column;
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 1.125rem;
   background-color: var(--bg-color);
@@ -33,6 +35,7 @@
 	text-shadow: .25rem .25rem var(--accent-color);
 	font-size: clamp(7.25rem, 6.9633rem + 1.2232vw, 7.5rem);
 	font-weight: 700;
+	line-height: 95.7px;
 }
 
 .decorated-zone::before {
@@ -77,6 +80,7 @@
 }
 
 .icon-rec {
+	display: var(--visible-block);
 	color: var(--accent-color);
 	position: absolute;
 	top: .625rem;
@@ -98,7 +102,6 @@
 .header-title {
 	grid-row: 2 / 3;
 	grid-column: span 2;
-	line-height: 95.7px;
 }
 
 .header-subtitle {
@@ -125,7 +128,7 @@
 .header__theme-menu-item button {
 	color: var(--l-title-color);
 	background-color: transparent;
-	padding: 1.5px 13px;
+	padding: 0 13px;
 	text-transform: lowercase;
 	border: 1px solid transparent;
 }
@@ -178,9 +181,9 @@
 }
 
 .images-container img {
+	object-fit: cover;
 	width: 100%;
 	height: 100%;
-  object-fit: cover;
 }
 
 .footer {
@@ -192,7 +195,7 @@
 	block-size: 100%;
 }
 
-@media (min-width: 728px) {
+@media (width >= 780px) {
 
 	.header {
 		min-block-size: 1024px;
@@ -227,7 +230,7 @@
 
 	.main-container {
 		padding-inline: 1.25rem;
-		margin-block-end: 5rem;
+		margin-block-end: 4rem;
 	}
 
 	.main-container article {
@@ -235,7 +238,7 @@
 	}
 
 	.section-title {
-		margin-block-start: 0;	
+		margin-block-start: 0;
 	}
 
 	.concentration-problems {
@@ -302,6 +305,11 @@
 		grid-column: 2;
 	}
 
+
+	.concentration-images .section-title {
+		margin-block-end: 1.25rem;
+	}
+
 	.images-container {
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(3, 1fr);
@@ -339,7 +347,7 @@
 	}
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
 
 	.title-decor {
 		font-size: 9.8125rem;
@@ -368,4 +376,60 @@
 		grid-column: 2 / 4;
 		padding-inline-start: 25%;
 	}
+
+	.main {
+		margin-block-end: 4rem;
+	}
+
+	.concentration-problems {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.concentration-problems__multitask {
+		grid-column: 2 / 4;
+	}
+
+	.concentration-problems__dopamine {
+		grid-column: 2 / 4;
+	}
+
+	.concentration-problems {
+		grid-template-columns: repeat(3, 1fr);
+
+	}
+
+	.concentration-reasons__multitask {
+		grid-row: 2;
+		grid-column: 1;
+	}
+
+	.concentration-reasons__food {
+		grid-row: 2;
+		grid-column: 2;
+	}
+
+	.concentration-reasons__gadgets {
+		grid-row: 2;
+		grid-column: 3;
+	}
+
+	.concentration-solutions {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.25rem;
+	}
+
+	.concentration-solutions__about {
+		grid-column: 2 / 4;
+	}
+
+	.images-container {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		max-block-size: 65.5rem;
+	}
+
+	.footer {
+		min-block-size: 48rem;
+	}
+
 }
