@@ -9,3 +9,17 @@
   --hover-button: rgba(50, 49, 45, 0.4);
   --visible-block: none;
 }
+
+@media (prefers-color-scheme: light) {
+  .page.theme_light {
+    --bg-color: #fff1f7;
+    --header-bg-image: url("../images/cover-image-light.png");
+    --accent-color: #ff8dcb;
+    --xl-title-color: #ffc2e6;
+    --l-title-color: #353430;
+    --m-title-color: #353430;
+    --text-color: #353430;
+    --hover-button: rgba(50, 49, 45, 0.4);
+    --visible-block: none;
+  }
+}

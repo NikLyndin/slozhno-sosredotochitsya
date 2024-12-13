@@ -33,7 +33,7 @@
 .title-decor {
 	color: var(--xl-title-color);
 	text-shadow: .25rem .25rem var(--accent-color);
-	font-size: clamp(7.25rem, 6.9633rem + 1.2232vw, 7.5rem);
+	font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 	font-weight: 700;
 	line-height: 95.7px;
 }
@@ -195,7 +195,7 @@
 	block-size: 100%;
 }
 
-@media (width >= 780px) {
+@media (width >= 728px) {
 
 	.header {
 		min-block-size: 64rem;
@@ -392,10 +392,6 @@
 
 	.concentration-problems__dopamine {
 		grid-column: 2 / 4;
-	}
-
-	.concentration-problems {
-		grid-template-columns: repeat(3, 1fr);
 	}
 
 	.concentration-reasons__multitask {
