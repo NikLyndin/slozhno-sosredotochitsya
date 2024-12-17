@@ -167,8 +167,8 @@
 }
 
 .section-text {
-  color: var(--text-color);
 	margin-block-start: 5px;
+  color: var(--text-color);
 }
 
 .images-container {
@@ -279,10 +279,8 @@
 
 	.images-container {
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(3, 1fr);
 		gap: 1.25rem;
-		margin-block-end: 10rem;
-		block-size: 100vh;
+		margin-block-end: 1rem;
 	}
 
 	.images-container__sunset {
@@ -361,9 +359,13 @@
 		grid-auto-flow: row;
 	}
 
+	.concentration-reasons__title {
+		grid-column: span 3;
+		max-inline-size: 20rem;
+	}
+
 	.concentration-reasons div {
 		grid-column: span 1;
-		grid-row: 2;
 	}
 
 	.concentration-solutions {
@@ -375,7 +377,8 @@
 	}
 
 	.images-container {
-		margin-block-end: 26.5rem;
+		margin-block-end: 18.5rem;
+		block-size: 100vh;
 	}
 	
 	.footer {
