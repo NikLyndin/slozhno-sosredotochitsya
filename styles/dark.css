@@ -11,6 +11,7 @@
   --hover-button-color: rgba(255, 0, 112, 0.4);
   --focus-button-color: #ff0070;
   --decorated-zone-color: #ff0070;
+  --active-button-colo: #ff0070;
 }
 
 .page.theme_dark {
@@ -26,4 +27,5 @@
   --hover-button-color: rgba(255, 0, 112, 0.4);
   --focus-button-color: #ff0070;
   --decorated-zone-color: #ff0070;
+  --active-button-colo: #ff0070;
 }
