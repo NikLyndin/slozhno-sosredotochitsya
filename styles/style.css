@@ -17,7 +17,7 @@
 }
 
 .text-shadow:hover {
-	border-bottom: 1px solid var(--accent-color);
+	border-bottom: 1px solid var(--hover-link-color);
 }
 
 .text-shadow:focus {
@@ -25,7 +25,7 @@
 }
 
 .text-shadow:focus-visible {
-	outline: 1px solid var(--accent-color);
+	outline: 1px solid var(--focus-link-color);
 }
 
 .title-decor {
@@ -43,8 +43,8 @@
 	right: 10px;
 	width: 25px;
 	height: 25px;
-	border-top: 1px solid var(--accent-color);
-	border-right: 1px solid var(--accent-color);
+	border-top: 1px solid var(--decorated-zone-color);
+	border-right: 1px solid var(--decorated-zone-color);
 }
 
 .decorated-zone::after {
@@ -54,8 +54,8 @@
 	left: 10px;
 	width: 25px;
 	height: 25px;
-	border-bottom: 1px solid var(--accent-color);
-	border-left: 1px solid var(--accent-color);
+	border-bottom: 1px solid var(--decorated-zone-color);
+	border-left: 1px solid var(--decorated-zone-color);
 }
 
 .header {
@@ -126,10 +126,11 @@
 	color: var(--l-title-color);
 	text-transform: lowercase;
 	background-color: transparent;
+	transition: 0.5s;
 }
 
 .header__theme-menu-item button:hover {
-  border: 1px solid var(--hover-button);
+  border: 1px solid var(--hover-button-color);
 }
 
 .header__theme-menu-item button:focus {
@@ -137,7 +138,7 @@
 }
 
 .header__theme-menu-item button:focus-visible {
-	border-bottom: 1px solid var(--accent-color);
+	border-bottom: 1px solid var(--focus-button-color);
 }
 
 .main-container {

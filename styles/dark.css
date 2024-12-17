@@ -5,8 +5,12 @@
   --l-title-color: #ff0070;
   --m-title-color: #000028;
   --text-color: #f1b2ce;
-  --hover-button: rgba(255, 0, 112, 0.4);
   --visible-block: block;
+  --hover-link-color: #f1b2ce;
+  --focus-link-color: #f1b2ce;
+  --hover-button-color: rgba(255, 0, 112, 0.4);
+  --focus-button-color: #ff0070;
+  --decorated-zone-color: #ff0070;
 }
 
 .page.theme_dark {
@@ -16,6 +20,10 @@
   --l-title-color: #ff0070;
   --m-title-color: #000028;
   --text-color: #f1b2ce;
-  --hover-button: rgba(255, 0, 112, 0.4);
   --visible-block: block;
+  --hover-link-color: #f1b2ce;
+  --focus-link-color: #f1b2ce;
+  --hover-button-color: rgba(255, 0, 112, 0.4);
+  --focus-button-color: #ff0070;
+  --decorated-zone-color: #ff0070;
 }
