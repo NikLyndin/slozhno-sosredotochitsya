@@ -198,7 +198,6 @@
 	.header {
 		margin-block-end: 3.75rem;
 		padding: 1.25rem;
-		min-block-size: 64rem;
 	}
 
 	.header-title {
@@ -309,10 +308,6 @@
 		grid-column: 2 / 4;
 		grid-row: 3;
 	}
-
-	.footer {
-		min-block-size: 64rem;
-	}
 }
 
 @media (width >= 1024px) {
@@ -323,7 +318,6 @@
 	
 	.header {
 		margin-block-end: 3.75rem;
-		min-block-size: 48rem;
 	}
 
 	.header__theme-menu {
@@ -336,12 +330,9 @@
 		flex-direction: row;
 	}
 
-	.header-title {
-		line-height: 129.53px;
-	}
-
 	.header-subtitle {
 		grid-column: 2;
+		margin-block-end: -1rem;
 	}
 
 	.main {
@@ -376,10 +367,5 @@
 
 	.concentration-solutions__about {
 		grid-column: span 2;
-	}
-
-	.images-container {
-		margin-block-end: 18.5rem;
-		block-size: 100vh;
 	}
 }
