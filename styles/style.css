@@ -69,10 +69,6 @@
 	block-size: 100vh;
 }
 
-.header__theme-menu-button_active {
-	pointer-events: none;
-}
-
 .icon-rec {
 	position: absolute;
 	top: .625rem;
@@ -141,7 +137,8 @@
 	border-bottom: 1px solid var(--focus-button-color);
 }
 
-.header__theme-menu-button_active:active {
+.header__theme-menu-button_active {
+	pointer-events: none;
 	border: 1px solid var(--focus-button-color);
 }
 
@@ -384,9 +381,5 @@
 	.images-container {
 		margin-block-end: 18.5rem;
 		block-size: 100vh;
-	}
-	
-	.footer {
-		min-block-size: 48rem;
 	}
 }
